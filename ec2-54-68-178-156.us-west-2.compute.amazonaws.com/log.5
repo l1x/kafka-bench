@@ -1,0 +1,96 @@
+bin/kafka-run-class.sh org.apache.kafka.clients.tools.ProducerPerformance test-0 2500000 128 -1 acks=1 bootstrap.servers=ec2-54-68-208-77.us-west-2.compute.amazonaws.com:9092,ec2-54-68-237-193.us-west-2.compute.amazonaws.com:9092,ec2-54-68-181-243.us-west-2.compute.amazonaws.com:9092,ec2-54-69-44-82.us-west-2.compute.amazonaws.com:9092,ec2-54-69-78-228.us-west-2.compute.amazonaws.com:9092 buffer.memory=64000 batch.size=256
+288482 records sent, 57696.4 records/sec (7.04 MB/sec), 4.2 ms avg latency, 375.0 max latency.
+247371 records sent, 49474.2 records/sec (6.04 MB/sec), 5.1 ms avg latency, 361.0 max latency.
+223332 records sent, 44154.2 records/sec (5.39 MB/sec), 5.4 ms avg latency, 362.0 max latency.
+264076 records sent, 52594.3 records/sec (6.42 MB/sec), 4.9 ms avg latency, 363.0 max latency.
+245713 records sent, 49024.9 records/sec (5.98 MB/sec), 5.1 ms avg latency, 413.0 max latency.
+222494 records sent, 44128.1 records/sec (5.39 MB/sec), 5.5 ms avg latency, 420.0 max latency.
+287000 records sent, 57400.0 records/sec (7.01 MB/sec), 4.6 ms avg latency, 419.0 max latency.
+240328 records sent, 47797.9 records/sec (5.83 MB/sec), 5.1 ms avg latency, 417.0 max latency.
+215776 records sent, 43120.7 records/sec (5.26 MB/sec), 5.8 ms avg latency, 418.0 max latency.
+2500000 records sent, 49860.390905 records/sec (6.09 MB/sec), 5.01 ms avg latency, 420.00 ms max latency, 1 ms 50th, 9 ms 95th, 76 ms 99th, 355 ms 99.9th.
+bin/kafka-run-class.sh org.apache.kafka.clients.tools.ProducerPerformance test-0 2500000 128 -1 acks=1 bootstrap.servers=ec2-54-68-208-77.us-west-2.compute.amazonaws.com:9092,ec2-54-68-237-193.us-west-2.compute.amazonaws.com:9092,ec2-54-68-181-243.us-west-2.compute.amazonaws.com:9092,ec2-54-69-44-82.us-west-2.compute.amazonaws.com:9092,ec2-54-69-78-228.us-west-2.compute.amazonaws.com:9092 buffer.memory=64000 batch.size=512
+330864 records sent, 66001.2 records/sec (8.06 MB/sec), 5.0 ms avg latency, 421.0 max latency.
+341599 records sent, 68115.5 records/sec (8.31 MB/sec), 5.2 ms avg latency, 413.0 max latency.
+343891 records sent, 68191.8 records/sec (8.32 MB/sec), 4.9 ms avg latency, 469.0 max latency.
+341249 records sent, 68249.8 records/sec (8.33 MB/sec), 5.4 ms avg latency, 416.0 max latency.
+375793 records sent, 75158.6 records/sec (9.17 MB/sec), 4.6 ms avg latency, 426.0 max latency.
+327499 records sent, 65499.8 records/sec (8.00 MB/sec), 5.3 ms avg latency, 423.0 max latency.
+340368 records sent, 67359.6 records/sec (8.22 MB/sec), 5.1 ms avg latency, 470.0 max latency.
+2500000 records sent, 69190.745046 records/sec (8.45 MB/sec), 5.01 ms avg latency, 470.00 ms max latency, 1 ms 50th, 4 ms 95th, 104 ms 99th, 401 ms 99.9th.
+bin/kafka-run-class.sh org.apache.kafka.clients.tools.ProducerPerformance test-0 2500000 128 -1 acks=1 bootstrap.servers=ec2-54-68-208-77.us-west-2.compute.amazonaws.com:9092,ec2-54-68-237-193.us-west-2.compute.amazonaws.com:9092,ec2-54-68-181-243.us-west-2.compute.amazonaws.com:9092,ec2-54-69-44-82.us-west-2.compute.amazonaws.com:9092,ec2-54-69-78-228.us-west-2.compute.amazonaws.com:9092 buffer.memory=64000 batch.size=1024
+223243 records sent, 44648.6 records/sec (5.45 MB/sec), 4.1 ms avg latency, 446.0 max latency.
+243921 records sent, 48784.2 records/sec (5.96 MB/sec), 3.9 ms avg latency, 490.0 max latency.
+272147 records sent, 54396.8 records/sec (6.64 MB/sec), 3.3 ms avg latency, 414.0 max latency.
+246373 records sent, 48479.5 records/sec (5.92 MB/sec), 3.9 ms avg latency, 417.0 max latency.
+263422 records sent, 52684.4 records/sec (6.43 MB/sec), 3.8 ms avg latency, 419.0 max latency.
+258894 records sent, 51778.8 records/sec (6.32 MB/sec), 3.6 ms avg latency, 417.0 max latency.
+228402 records sent, 44996.5 records/sec (5.49 MB/sec), 4.2 ms avg latency, 416.0 max latency.
+293062 records sent, 58460.4 records/sec (7.14 MB/sec), 3.2 ms avg latency, 398.0 max latency.
+237463 records sent, 47275.1 records/sec (5.77 MB/sec), 3.9 ms avg latency, 420.0 max latency.
+2500000 records sent, 50228.035280 records/sec (6.13 MB/sec), 3.78 ms avg latency, 490.00 ms max latency, 1 ms 50th, 2 ms 95th, 90 ms 99th, 371 ms 99.9th.
+bin/kafka-run-class.sh org.apache.kafka.clients.tools.ProducerPerformance test-0 2500000 128 -1 acks=1 bootstrap.servers=ec2-54-68-208-77.us-west-2.compute.amazonaws.com:9092,ec2-54-68-237-193.us-west-2.compute.amazonaws.com:9092,ec2-54-68-181-243.us-west-2.compute.amazonaws.com:9092,ec2-54-69-44-82.us-west-2.compute.amazonaws.com:9092,ec2-54-69-78-228.us-west-2.compute.amazonaws.com:9092 buffer.memory=640000 batch.size=4096
+586262 records sent, 117252.4 records/sec (14.31 MB/sec), 26.1 ms avg latency, 481.0 max latency.
+541333 records sent, 107899.7 records/sec (13.17 MB/sec), 31.3 ms avg latency, 534.0 max latency.
+530705 records sent, 104490.1 records/sec (12.76 MB/sec), 32.1 ms avg latency, 468.0 max latency.
+608698 records sent, 121739.6 records/sec (14.86 MB/sec), 28.6 ms avg latency, 505.0 max latency.
+2500000 records sent, 112112.650792 records/sec (13.69 MB/sec), 29.84 ms avg latency, 536.00 ms max latency, 2 ms 50th, 204 ms 95th, 380 ms 99th, 476 ms 99.9th.
+bin/kafka-run-class.sh org.apache.kafka.clients.tools.ProducerPerformance test-0 2500000 128 -1 acks=1 bootstrap.servers=ec2-54-68-208-77.us-west-2.compute.amazonaws.com:9092,ec2-54-68-237-193.us-west-2.compute.amazonaws.com:9092,ec2-54-68-181-243.us-west-2.compute.amazonaws.com:9092,ec2-54-69-44-82.us-west-2.compute.amazonaws.com:9092,ec2-54-69-78-228.us-west-2.compute.amazonaws.com:9092 buffer.memory=1048576 batch.size=8192
+544831 records sent, 108966.2 records/sec (13.30 MB/sec), 41.3 ms avg latency, 497.0 max latency.
+653005 records sent, 130601.0 records/sec (15.94 MB/sec), 38.0 ms avg latency, 478.0 max latency.
+543746 records sent, 108749.2 records/sec (13.28 MB/sec), 44.4 ms avg latency, 469.0 max latency.
+578333 records sent, 115666.6 records/sec (14.12 MB/sec), 41.8 ms avg latency, 463.0 max latency.
+2500000 records sent, 117233.294256 records/sec (14.31 MB/sec), 41.01 ms avg latency, 497.00 ms max latency, 1 ms 50th, 270 ms 95th, 409 ms 99th, 471 ms 99.9th.
+bin/kafka-run-class.sh org.apache.kafka.clients.tools.ProducerPerformance test-0 2500000 128 -1 acks=1 bootstrap.servers=ec2-54-68-208-77.us-west-2.compute.amazonaws.com:9092,ec2-54-68-237-193.us-west-2.compute.amazonaws.com:9092,ec2-54-68-181-243.us-west-2.compute.amazonaws.com:9092,ec2-54-69-44-82.us-west-2.compute.amazonaws.com:9092,ec2-54-69-78-228.us-west-2.compute.amazonaws.com:9092 buffer.memory=2097152 batch.size=16384
+639366 records sent, 127873.2 records/sec (15.61 MB/sec), 62.9 ms avg latency, 433.0 max latency.
+769891 records sent, 153978.2 records/sec (18.80 MB/sec), 53.1 ms avg latency, 496.0 max latency.
+869507 records sent, 173901.4 records/sec (21.23 MB/sec), 48.9 ms avg latency, 465.0 max latency.
+2500000 records sent, 150511.739916 records/sec (18.37 MB/sec), 54.80 ms avg latency, 496.00 ms max latency, 2 ms 50th, 262 ms 95th, 355 ms 99th, 423 ms 99.9th.
+bin/kafka-run-class.sh org.apache.kafka.clients.tools.ProducerPerformance test-0 800000 256 -1 acks=1 bootstrap.servers=ec2-54-68-208-77.us-west-2.compute.amazonaws.com:9092,ec2-54-68-237-193.us-west-2.compute.amazonaws.com:9092,ec2-54-68-181-243.us-west-2.compute.amazonaws.com:9092,ec2-54-69-44-82.us-west-2.compute.amazonaws.com:9092,ec2-54-69-78-228.us-west-2.compute.amazonaws.com:9092 buffer.memory=1048576 batch.size=4096
+313896 records sent, 62404.8 records/sec (15.24 MB/sec), 48.9 ms avg latency, 596.0 max latency.
+800000 records sent, 80264.874084 records/sec (19.60 MB/sec), 39.59 ms avg latency, 610.00 ms max latency, 2 ms 50th, 269 ms 95th, 388 ms 99th, 493 ms 99.9th.
+bin/kafka-run-class.sh org.apache.kafka.clients.tools.ProducerPerformance test-0 800000 256 -1 acks=1 bootstrap.servers=ec2-54-68-208-77.us-west-2.compute.amazonaws.com:9092,ec2-54-68-237-193.us-west-2.compute.amazonaws.com:9092,ec2-54-68-181-243.us-west-2.compute.amazonaws.com:9092,ec2-54-69-44-82.us-west-2.compute.amazonaws.com:9092,ec2-54-69-78-228.us-west-2.compute.amazonaws.com:9092 buffer.memory=2097152 batch.size=8192
+434800 records sent, 85996.8 records/sec (21.00 MB/sec), 71.7 ms avg latency, 608.0 max latency.
+800000 records sent, 86862.106406 records/sec (21.21 MB/sec), 74.56 ms avg latency, 705.00 ms max latency, 2 ms 50th, 410 ms 95th, 505 ms 99th, 654 ms 99.9th.
+bin/kafka-run-class.sh org.apache.kafka.clients.tools.ProducerPerformance test-0 800000 256 -1 acks=1 bootstrap.servers=ec2-54-68-208-77.us-west-2.compute.amazonaws.com:9092,ec2-54-68-237-193.us-west-2.compute.amazonaws.com:9092,ec2-54-68-181-243.us-west-2.compute.amazonaws.com:9092,ec2-54-69-44-82.us-west-2.compute.amazonaws.com:9092,ec2-54-69-78-228.us-west-2.compute.amazonaws.com:9092 buffer.memory=4194304 batch.size=16384
+583582 records sent, 116716.4 records/sec (28.50 MB/sec), 103.8 ms avg latency, 826.0 max latency.
+800000 records sent, 125529.577907 records/sec (30.65 MB/sec), 97.17 ms avg latency, 831.00 ms max latency, 4 ms 50th, 514 ms 95th, 747 ms 99th, 830 ms 99.9th.
+bin/kafka-run-class.sh org.apache.kafka.clients.tools.ProducerPerformance test-0 800000 512 -1 acks=1 bootstrap.servers=ec2-54-68-208-77.us-west-2.compute.amazonaws.com:9092,ec2-54-68-237-193.us-west-2.compute.amazonaws.com:9092,ec2-54-68-181-243.us-west-2.compute.amazonaws.com:9092,ec2-54-69-44-82.us-west-2.compute.amazonaws.com:9092,ec2-54-69-78-228.us-west-2.compute.amazonaws.com:9092 buffer.memory=2097152 batch.size=4096
+217093 records sent, 43418.6 records/sec (21.20 MB/sec), 71.6 ms avg latency, 980.0 max latency.
+203236 records sent, 40647.2 records/sec (19.85 MB/sec), 89.5 ms avg latency, 999.0 max latency.
+276016 records sent, 53825.3 records/sec (26.28 MB/sec), 59.4 ms avg latency, 875.0 max latency.
+800000 records sent, 47167.030246 records/sec (23.03 MB/sec), 70.92 ms avg latency, 999.00 ms max latency, 2 ms 50th, 447 ms 95th, 651 ms 99th, 971 ms 99.9th.
+bin/kafka-run-class.sh org.apache.kafka.clients.tools.ProducerPerformance test-0 800000 512 -1 acks=1 bootstrap.servers=ec2-54-68-208-77.us-west-2.compute.amazonaws.com:9092,ec2-54-68-237-193.us-west-2.compute.amazonaws.com:9092,ec2-54-68-181-243.us-west-2.compute.amazonaws.com:9092,ec2-54-69-44-82.us-west-2.compute.amazonaws.com:9092,ec2-54-69-78-228.us-west-2.compute.amazonaws.com:9092 buffer.memory=4194304 batch.size=8192
+242551 records sent, 47188.9 records/sec (23.04 MB/sec), 142.2 ms avg latency, 1259.0 max latency.
+225820 records sent, 45164.0 records/sec (22.05 MB/sec), 164.5 ms avg latency, 1278.0 max latency.
+259480 records sent, 50650.0 records/sec (24.73 MB/sec), 143.5 ms avg latency, 1200.0 max latency.
+800000 records sent, 45256.548057 records/sec (22.10 MB/sec), 161.22 ms avg latency, 1682.00 ms max latency, 2 ms 50th, 1005 ms 95th, 1063 ms 99th, 1673 ms 99.9th.
+bin/kafka-run-class.sh org.apache.kafka.clients.tools.ProducerPerformance test-0 800000 512 -1 acks=1 bootstrap.servers=ec2-54-68-208-77.us-west-2.compute.amazonaws.com:9092,ec2-54-68-237-193.us-west-2.compute.amazonaws.com:9092,ec2-54-68-181-243.us-west-2.compute.amazonaws.com:9092,ec2-54-69-44-82.us-west-2.compute.amazonaws.com:9092,ec2-54-69-78-228.us-west-2.compute.amazonaws.com:9092 buffer.memory=8388608 batch.size=16384
+253272 records sent, 45866.0 records/sec (22.40 MB/sec), 246.0 ms avg latency, 1491.0 max latency.
+249861 records sent, 49972.2 records/sec (24.40 MB/sec), 307.5 ms avg latency, 1431.0 max latency.
+800000 records sent, 52290.999412 records/sec (25.53 MB/sec), 270.66 ms avg latency, 1543.00 ms max latency, 7 ms 50th, 1234 ms 95th, 1463 ms 99th, 1541 ms 99.9th.
+bin/kafka-run-class.sh org.apache.kafka.clients.tools.ProducerPerformance test-0 800000 1024 -1 acks=1 bootstrap.servers=ec2-54-68-208-77.us-west-2.compute.amazonaws.com:9092,ec2-54-68-237-193.us-west-2.compute.amazonaws.com:9092,ec2-54-68-181-243.us-west-2.compute.amazonaws.com:9092,ec2-54-69-44-82.us-west-2.compute.amazonaws.com:9092,ec2-54-69-78-228.us-west-2.compute.amazonaws.com:9092 buffer.memory=4194304 batch.size=4096
+88971 records sent, 17794.2 records/sec (17.38 MB/sec), 156.6 ms avg latency, 1808.0 max latency.
+77233 records sent, 14236.5 records/sec (13.90 MB/sec), 197.4 ms avg latency, 1437.0 max latency.
+76548 records sent, 15309.6 records/sec (14.95 MB/sec), 225.0 ms avg latency, 1573.0 max latency.
+102279 records sent, 19338.1 records/sec (18.88 MB/sec), 145.5 ms avg latency, 1356.0 max latency.
+107809 records sent, 21293.5 records/sec (20.79 MB/sec), 138.5 ms avg latency, 1429.0 max latency.
+90728 records sent, 18145.6 records/sec (17.72 MB/sec), 141.8 ms avg latency, 1966.0 max latency.
+94775 records sent, 18955.0 records/sec (18.51 MB/sec), 204.7 ms avg latency, 1791.0 max latency.
+106828 records sent, 21145.7 records/sec (20.65 MB/sec), 131.1 ms avg latency, 1630.0 max latency.
+800000 records sent, 17646.410058 records/sec (17.23 MB/sec), 171.96 ms avg latency, 2126.00 ms max latency, 2 ms 50th, 1145 ms 95th, 1748 ms 99th, 2060 ms 99.9th.
+bin/kafka-run-class.sh org.apache.kafka.clients.tools.ProducerPerformance test-0 800000 1024 -1 acks=1 bootstrap.servers=ec2-54-68-208-77.us-west-2.compute.amazonaws.com:9092,ec2-54-68-237-193.us-west-2.compute.amazonaws.com:9092,ec2-54-68-181-243.us-west-2.compute.amazonaws.com:9092,ec2-54-69-44-82.us-west-2.compute.amazonaws.com:9092,ec2-54-69-78-228.us-west-2.compute.amazonaws.com:9092 buffer.memory=8388608 batch.size=8192
+80021 records sent, 16001.0 records/sec (15.63 MB/sec), 271.1 ms avg latency, 2035.0 max latency.
+129017 records sent, 25342.2 records/sec (24.75 MB/sec), 305.5 ms avg latency, 2388.0 max latency.
+128971 records sent, 25135.6 records/sec (24.55 MB/sec), 291.7 ms avg latency, 2033.0 max latency.
+130704 records sent, 23348.3 records/sec (22.80 MB/sec), 314.7 ms avg latency, 2018.0 max latency.
+167617 records sent, 33523.4 records/sec (32.74 MB/sec), 246.5 ms avg latency, 2344.0 max latency.
+107277 records sent, 19469.5 records/sec (19.01 MB/sec), 255.5 ms avg latency, 2084.0 max latency.
+800000 records sent, 22770.614522 records/sec (22.24 MB/sec), 303.53 ms avg latency, 2433.00 ms max latency, 3 ms 50th, 1674 ms 95th, 2203 ms 99th, 2418 ms 99.9th.
+bin/kafka-run-class.sh org.apache.kafka.clients.tools.ProducerPerformance test-0 800000 1024 -1 acks=1 bootstrap.servers=ec2-54-68-208-77.us-west-2.compute.amazonaws.com:9092,ec2-54-68-237-193.us-west-2.compute.amazonaws.com:9092,ec2-54-68-181-243.us-west-2.compute.amazonaws.com:9092,ec2-54-69-44-82.us-west-2.compute.amazonaws.com:9092,ec2-54-69-78-228.us-west-2.compute.amazonaws.com:9092 buffer.memory=16777216 batch.size=16384
+169402 records sent, 29887.4 records/sec (29.19 MB/sec), 336.8 ms avg latency, 2737.0 max latency.
+126489 records sent, 25107.0 records/sec (24.52 MB/sec), 588.7 ms avg latency, 3082.0 max latency.
+125403 records sent, 23678.8 records/sec (23.12 MB/sec), 646.0 ms avg latency, 3230.0 max latency.
+132413 records sent, 26482.6 records/sec (25.86 MB/sec), 597.2 ms avg latency, 2478.0 max latency.
+163107 records sent, 31079.8 records/sec (30.35 MB/sec), 420.8 ms avg latency, 2789.0 max latency.
+800000 records sent, 28244.598221 records/sec (27.58 MB/sec), 509.95 ms avg latency, 3230.00 ms max latency, 27 ms 50th, 2298 ms 95th, 2723 ms 99th, 3079 ms 99.9th.

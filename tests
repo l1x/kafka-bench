@@ -1,0 +1,43 @@
+
+
+128 
+
+ batch.size=4096 
+ batch.size=8192
+ batch.size=16384
+
+bin/kafka-run-class.sh org.apache.kafka.clients.tools.ProducerPerformance test-0 2500000 128 -1 acks=1  buffer.memory=640000 batch.size=4096
+2500000 records sent, 112112.650792 records/sec (13.69 MB/sec), 29.84 ms avg latency, 536.00 ms max latency, 2 ms 50th, 204 ms 95th, 380 ms 99th, 476 ms 99.9th.
+
+bin/kafka-run-class.sh org.apache.kafka.clients.tools.ProducerPerformance test-0 2500000 128 -1 acks=1  buffer.memory=1048576 batch.size=8192
+2500000 records sent, 117233.294256 records/sec (14.31 MB/sec), 41.01 ms avg latency, 497.00 ms max latency, 1 ms 50th, 270 ms 95th, 409 ms 99th, 471 ms 99.9th.
+
+bin/kafka-run-class.sh org.apache.kafka.clients.tools.ProducerPerformance test-0 2500000 128 -1 acks=1  buffer.memory=2097152 batch.size=16384
+2500000 records sent, 150511.739916 records/sec (18.37 MB/sec), 54.80 ms avg latency, 496.00 ms max latency, 2 ms 50th, 262 ms 95th, 355 ms 99th, 423 ms 99.9th.
+
+bin/kafka-run-class.sh org.apache.kafka.clients.tools.ProducerPerformance test-0 800000 256 -1 acks=1  buffer.memory=1048576 batch.size=4096
+800000 records sent, 80264.874084 records/sec (19.60 MB/sec), 39.59 ms avg latency, 610.00 ms max latency, 2 ms 50th, 269 ms 95th, 388 ms 99th, 493 ms 99.9th.
+
+bin/kafka-run-class.sh org.apache.kafka.clients.tools.ProducerPerformance test-0 800000 256 -1 acks=1  buffer.memory=2097152 batch.size=8192
+800000 records sent, 86862.106406 records/sec (21.21 MB/sec), 74.56 ms avg latency, 705.00 ms max latency, 2 ms 50th, 410 ms 95th, 505 ms 99th, 654 ms 99.9th.
+
+bin/kafka-run-class.sh org.apache.kafka.clients.tools.ProducerPerformance test-0 800000 256 -1 acks=1  buffer.memory=4194304 batch.size=16384
+800000 records sent, 125529.577907 records/sec (30.65 MB/sec), 97.17 ms avg latency, 831.00 ms max latency, 4 ms 50th, 514 ms 95th, 747 ms 99th, 830 ms 99.9th.
+
+bin/kafka-run-class.sh org.apache.kafka.clients.tools.ProducerPerformance test-0 800000 512 -1 acks=1  buffer.memory=2097152 batch.size=4096
+800000 records sent, 47167.030246 records/sec (23.03 MB/sec), 70.92 ms avg latency, 999.00 ms max latency, 2 ms 50th, 447 ms 95th, 651 ms 99th, 971 ms 99.9th.
+
+bin/kafka-run-class.sh org.apache.kafka.clients.tools.ProducerPerformance test-0 800000 512 -1 acks=1  buffer.memory=4194304 batch.size=8192
+800000 records sent, 45256.548057 records/sec (22.10 MB/sec), 161.22 ms avg latency, 1682.00 ms max latency, 2 ms 50th, 1005 ms 95th, 1063 ms 99th, 1673 ms 99.9th.
+
+bin/kafka-run-class.sh org.apache.kafka.clients.tools.ProducerPerformance test-0 800000 512 -1 acks=1  buffer.memory=8388608 batch.size=16384
+800000 records sent, 52290.999412 records/sec (25.53 MB/sec), 270.66 ms avg latency, 1543.00 ms max latency, 7 ms 50th, 1234 ms 95th, 1463 ms 99th, 1541 ms 99.9th.
+
+bin/kafka-run-class.sh org.apache.kafka.clients.tools.ProducerPerformance test-0 800000 1024 -1 acks=1  buffer.memory=4194304 batch.size=4096
+800000 records sent, 17646.410058 records/sec (17.23 MB/sec), 171.96 ms avg latency, 2126.00 ms max latency, 2 ms 50th, 1145 ms 95th, 1748 ms 99th, 2060 ms 99.9th.
+
+bin/kafka-run-class.sh org.apache.kafka.clients.tools.ProducerPerformance test-0 800000 1024 -1 acks=1  buffer.memory=8388608 batch.size=8192
+800000 records sent, 22770.614522 records/sec (22.24 MB/sec), 303.53 ms avg latency, 2433.00 ms max latency, 3 ms 50th, 1674 ms 95th, 2203 ms 99th, 2418 ms 99.9th.
+
+bin/kafka-run-class.sh org.apache.kafka.clients.tools.ProducerPerformance test-0 800000 1024 -1 acks=1  buffer.memory=16777216 batch.size=16384
+800000 records sent, 28244.598221 records/sec (27.58 MB/sec), 509.95 ms avg latency, 3230.00 ms max latency, 27 ms 50th, 2298 ms 95th, 2723 ms 99th, 3079 ms 99.9th.

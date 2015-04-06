@@ -1,0 +1,7 @@
+pdsh -w ^aws 'yum install mdadm -y'
+pdsh -w ^aws 'yes | mdadm --create --verbose /dev/md0 --level=10 --chunk=256 --raid-devices=4 /dev/xvdb /dev/xvdc /dev/xvdd /dev/xvde'
+pdsh -w ^aws 'mkfs.xfs -f -L DATA -d su=256k,sw=4 -l version=2,su=128k -isize=512 /dev/md0'
+pdsh -w ^aws 'mkdir /data'
+pdsh -w ^aws 'mount /dev/md0 /data'
+pdsh -w ^aws 'df -h | grep data'
+pdsh -w ^aws 'cat /proc/mdstat'
